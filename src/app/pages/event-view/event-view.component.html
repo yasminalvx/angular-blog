@@ -1,0 +1,16 @@
+<div class="container__content">
+  <div class="content__cover">
+    <img src="{{ eventDetails.imgSrc }}" alt="" srcset="">
+  </div>
+  <div class="content__title">
+    <h1>{{ eventDetails.title }}</h1>
+    <hr />
+  </div>
+  <div class="content__description">
+    <p>
+      {{ eventDetails.description }}
+    </p>
+  </div>
+
+  <button type="button" class="btn btn-dark" [routerLink]="['']"> Voltar </button>
+</div>

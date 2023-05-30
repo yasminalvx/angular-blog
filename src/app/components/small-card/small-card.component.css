@@ -1,6 +1,6 @@
 .container__small-card{
-  width: 700px;
-  max-width: calc(100vw - 30px);
+  width: 100%;
+  max-width: calc(100% - 30px);
   margin: 15px;
 }
 
@@ -10,15 +10,10 @@
 }
 
 .small-card__photo > img {
-  width: 190px;
-  min-width: 190px;
+  max-width: 190px;
   margin-right: 20px;
-}
-
-.small-card__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 190px;
+  max-height: 190px;
 }
 
 .small-card__title > h1 {
@@ -27,4 +22,31 @@
 
 .container__small-card__separator{
   margin-top: 10px;
+}
+
+.small-card__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  max-height: 190px;
+  overflow: hidden;
+}
+
+.small-card__description {
+  color: #c9c9c9;
+  font-weight: 500;
+}
+
+.small-card__more {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: end;
+  box-shadow: 0 -8px 23px 12px #111111;
+}
+
+.small-card__description:hover .small-card__more {
+  display: block;
 }

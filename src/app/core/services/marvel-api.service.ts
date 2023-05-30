@@ -15,7 +15,7 @@ private hash = environment.hash;
 
 constructor(public httpClient: HttpClient) { }
 
-  public get(path: string, params: string): Observable<any> {
+  public get(path: string, params: string = ''): Observable<any> {
     return this.httpClient
             .get(`${this.base_url + path}?ts=1&apikey=${this.public_key}&hash=${this.hash}${params}`)
             .pipe(catchError((e: HttpErrorResponse) => throwError(e)));

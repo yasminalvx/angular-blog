@@ -4,18 +4,18 @@
     <img
       src="{{ photoCover }}"
       alt=""
-      height="200px"
       srcset=""
+      loading="lazy" 
     >
   </div>
 
   <div class="big-card__title">
-    <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
+    <h1><a [routerLink]="['event', id]">{{ cardTitle }}</a></h1>
   </div>
 
   <div class="big-card__description">
     <p>
-      <a [routerLink]="['content', Id]">
+      <a [routerLink]="['event', id]">
           {{ cardDescription }}
       </a>
     </p>

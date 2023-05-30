@@ -6,10 +6,60 @@
 }
 
 .container__articles .title {
+  width: 100%;
   margin-bottom: 20px;
   margin-left: 15px;
 }
 
 .articles__main {
   width: 100%;
+}
+
+.articles__right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.articles__right_more {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn {
+  margin: 20px auto;
+}
+
+.articles__others {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articles__others div {
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .articles__others {
+    margin-top: 20px;
+  }
+  .articles__main {
+    width: 50%;
+  }
+
+  .articles__right {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (min-width: 1280px) {
+  .articles__others div {
+    width: 50%;
+  }
+  
 }
